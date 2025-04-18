@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Victor — Portfólio</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="pt-16 bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <!-- Navbar com ícones e toggle -->
+  <nav class="fixed top-0 w-full bg-opacity-50 bg-white dark:bg-gray-900 backdrop-blur p-4 flex justify-end gap-4 z-50">
+    <div class="flex-1 flex justify-center gap-4">
+      <a href="#hero" aria-label="Início"><img src="icons/botao-home.png" alt="" class="icon"></a>
+      <a href="https://github.com/2000paulo" target="_blank" aria-label="GitHub"><img src="icons/github.png" alt="" class="icon"></a>
+      <a href="https://linkedin.com/in/pauloferreira-of-quality" target="_blank" aria-label="LinkedIn"><img src="icons/linkedin.png" alt="" class="icon"></a>
+      <a href="https://t.me/PauloVictor01" target="_blank" aria-label="Telegram"><img src="icons/telegram.png" alt="" class="icon"></a>
+    </div>
+    <button id="theme-toggle" aria-label="Alternar Modo" class="ml-2 focus:outline-none">
+      <img src="icons/modo-claro.png" class="icon-modo hidden" alt="Modo Claro" id="modo-claro"/>
+      <img src="icons/modo-escuro.png" class="icon-modo" alt="Modo Escuro" id="modo-escuro"/>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="mt-16 min-h-screen flex flex-col justify-center items-center text-center p-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, eu sou <span class="text-indigo-500">Paulo Victor</span> 👋</h1>
+    <p class="max-w-2xl text-lg md:text-xl mb-8">
+      Estudante de Engenharia de Software na Universidade de Vassouras e Analista de Qualidade de Software, apaixonado por automação de testes, desenvolvimento web e visão computacional.
+    </p>
+    <img src="imagens/perfil.jpeg" alt="Paulo Victor" class="w-48 h-48 rounded-full border-4 border-indigo-500 mb-8" />
+  <!-- Botão Currículo AQUI, antes do form -->
+    <a
+    href="assets/Curriculo_PauloVictor.pdf"
+    download
+    class="px-8 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition">
+      Baixar Currículo
+  </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">Sobre</h2>
+      <p class="text-lg leading-relaxed">
+        Sou Paulo Victor, bacharelando em Engenharia de Software pela Universidade de Vassouras, com sólida experiência em Quality Assurance e desenvolvimento full‑stack. Atualmente atuo como QA Analyst Jr. na Libre Soluções do Governo, onde desenho e executo testes manuais e automatizados (Cypress, Selenium) para assegurar a qualidade de sistemas voltados ao setor público. No backend, trabalho com Python, Node.js, Flask e Django, e, no frontend, construo interfaces reativas em React.
+        Além disso Tenho experiência prática em metodologias ágeis (Scrum, Kanban), modelagem UML, arquitetura MVC e bancos de dados relacionais e NoSQL (PostgreSQL, MySQL, MongoDB). Com inglês técnico e espírito de colaboração, busco sempre aliar código de qualidade e testes robustos para entregar softwares eficientes e confiáveis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">Projetos Destaque</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card de projeto -->
+        <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg overflow-hidden">
+          <img src="imagens/projeto1.png" alt="Projeto 1" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Card Vazio</h3>
+            <p class="text-sm leading-relaxed mb-4">Descrição sobre o Projeto.</p>
+            <a href="#" class="text-indigo-500 font-semibold">Ver no GitHub →</a>
+          </div>
+        </div>
+        <!-- Repita cards conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section id="education" class="py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">Educação</h2>
+      
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-bold">Universidade de Vassouras</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+            2021–2025 • Bacharelado em Engenharia de Software • 9.6 CGPA
+          </p>
+        </div>
+  
+        <!-- Aqui começam as certificações -->
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Certificados</h4>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="assets/certs/Quality Assurance_Planos de Testes e Gestão de Bugs.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Quality Assurance</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Plano de Testes e Gestão de Bugs – Alura</p>
+            </a>
+            <a href="assets/certs/Cypress_Automatizando Testes E2E.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Cypress</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Automatizando Testes E2E – Alura</p>
+            </a>
+            <a href="assets/certs/Robot Framework_Automatizando testes padrão Bdd.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Robot Framework</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Automatizando Testes no Padrão BDD – Alura</p>
+            </a>
+            <a href="assets/certs/Integração Continua.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Integração Contínua</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Testes Automatizados e Pipeline no GitHub Actions – Alura</p>
+            </a>
+            <a href="assets/certs/Equipes Ágeis_Organizando os Papéis em uma equipe.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Equipes Ágeis</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Organizando os Papéis em uma Equipe – Alura</p>
+            </a>
+            <a href="assets/certs/Javascript_tipos, variaveis e funções.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">JavaScript</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Tipos, Variáveis e Funções – Alura</p>
+            </a>
+            <a href="assets/certs/HTML e CSS_cabeçalho,footer e variáveis Css.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">HTML & CSS</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Cabeçalho, Footer e Variáveis CSS – Alura</p>
+            </a>
+            <a href="assets/certs/HTML e CSS_Ambientes de Desenvolvimento.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">HTML & CSS</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Ambientes de Desenvolvimento, Estrutura de Arquivos e Tags – Alura</p>
+            </a>
+            <a href="assets/certs/Avançando com PHP_Arrays, Strings, função e Web.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Avançando com PHP</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Arrays, Strings, Função e Web – Alura</p>
+            </a>
+            <a href="assets/certs/PHP Strings_Manipulando Textos.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PHP Strings</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Manipulando Textos com PHP – Alura</p>
+            </a>
+            <a href="assets/certs/PHP-Conceitos_lidando com Dados,loops e mais.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PHP</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Conceitos, Lidando com Dados, Loops e Mais – Alura</p>
+            </a>
+            <a href="assets/certs/Php-Na-Web_Conhecendo o Padrão Mvc.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PHP na Web</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Conhecendo o Padrão MVC – Alura</p>
+            </a>
+            <a href="assets/certs/PostgreSQL.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PostgreSQL</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Fundamentos de PostgreSQL – Alura</p>
+            </a>
+            <a href="assets/certs/PostgreSQL_Comandos-DML e DDL.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PostgreSQL DML/DDL</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Comandos DML e DDL – Alura</p>
+            </a>
+            <a href="assets/certs/PostgreSQL_Views, Sub-consultas e funções.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">PostgreSQL Avançado</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Views, Sub-Consultas e Funções – Alura</p>
+            </a>
+            <a href="assets/certs/Git e GitHub.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Git & GitHub</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Repositório, Commit e Versões – Alura</p>
+            </a>
+            <a href="assets/certs/CERTIFICADO LGPD.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">LGPD</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Lei Geral De Proteção De Dados</p>
+            <a href="assets/certs/Certificado - Fundamentos de Ti Hardware e Software.pdf" download class="block p-4 bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition">
+              <h5 class="font-medium text-indigo-600 dark:text-indigo-400 mb-2">Fundamentos de TI</h5>
+              <p class="text-sm text-gray-500 dark:text-gray-300">Fundamentos de Ti:Hardware e Software</p>
+            </a>
+          </div>
+        </div>        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">Contato</h2>
+      <form
+        action="https://formspree.io/f/mblgvllv"
+        method="POST"
+        class="grid grid-cols-1 md:grid-cols-2 gap-6"
+      >
+        <!-- names obrigatórios -->
+        <input
+          type="text"
+          name="name"
+          placeholder="Nome *"
+          required
+          class="p-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email *"
+          required
+          class="p-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600"
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Assunto *"
+          required
+          class="p-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600"
+        />
+        <textarea
+          name="message"
+          placeholder="Mensagem *"
+          rows="5"
+          required
+          class="p-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 col-span-full"
+        ></textarea>
+  
+        <!-- opcional: campo oculto para assunto padrão -->
+        <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+  
+        <!-- Mensagens de sucesso / erro -->
+        <div id="form-alert" class="col-span-full text-center text-lg"></div>
+  
+        <button
+          type="submit"
+          class="col-span-full py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition"
+        >
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>  
+
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

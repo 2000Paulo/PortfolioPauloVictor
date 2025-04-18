@@ -1,0 +1,27 @@
+{
+    // 1) Force o VSCode a tratar *.css como PostCSS
+    "files.associations": {
+      "*.css": "postcss"
+    },
+  
+    // 2) Ignore erros de “unknown at-rule” (as diretivas @tailwind)
+    "css.lint.unknownAtRules": "ignore",
+  
+    // 3) Desative a validação de CSS puro (opcional, mas ajuda)
+    "css.validate": false,
+  
+    // 4) Deixe o PostCSS validar e entenda suas diretivas
+    "postcss.validate": true,
+  
+    // 5) Configure o IntelliSense do Tailwind para HTML/JS/CSS
+    "tailwindCSS.includeLanguages": {
+      "html": "html",
+      "css": "css",
+      "javascript": "javascript",
+      "typescript": "javascript"
+    },
+  
+    // 6) Aponte explicitamente para seu config (se não estiver na raiz)
+    // "tailwindCSS.experimental.configFile": "./tailwind.config.js"
+  }
+  
